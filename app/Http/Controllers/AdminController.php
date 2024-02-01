@@ -123,6 +123,11 @@ public function shipmentNotFound(){
     
     return view('shipment_not_found');
 }
+
+public function trackParcel(){
+    
+    return view('track_parcel');
+}
     
     
 

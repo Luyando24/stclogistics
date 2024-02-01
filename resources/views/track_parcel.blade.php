@@ -14,11 +14,11 @@
 
 <!--TRACKING FORM-->
 <div class="my-10"></div>
-@include('partials.tracking')
 <div class="text-center my-8 mx-8">
-<div class="text-lg text-red" style="color:red;">Shipment Not Found!</div>
-<p class="font-red">The provided tracking number does not match any shipment records.</p>
+<p class="font-red">Track your parcel by entering a tracking number bellow.</p>
 </div>
+@include('partials.tracking')
+
 <!--END TRACKING FORM-->
 
 

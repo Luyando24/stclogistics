@@ -17,10 +17,7 @@
           <a href="{{url('/destinations')}}" class="block py-2 pl-3 pr-4 text-gray-900 hover:text-red-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0  md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Destinations</a>
         </li>
         <li>
-          <a href="{{url('/rates')}}" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Shipping rates</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Tracking</a>
+          <a href="{{url('/track_parcel')}}" class="block py-2 pl-3 pr-4 text-gray-900 hover:text-red-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0  md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Tracking</a>
         </li>
         <li>
           <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Help</a>
@@ -28,7 +25,7 @@
         
         <li>
         @if(Auth::id())
-          <a href="{{url('/ship')}}" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Submit parcel</a>
+          <a href="{{url('/ship')}}" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Ship Now</a>
         @else
           <a href="{{url('/login')}}" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent">Submit parcel</a>
         @endif

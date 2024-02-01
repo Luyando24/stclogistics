@@ -34,6 +34,7 @@ Route::post("/update-shipment", [AdminController::class, "updateShipment"]);
 Route::get("/sea-rates", [AdminController::class, "setSeaRates"]);
 Route::post("/sea_rates", [AdminController::class, "seaRates"]);
 Route::get("/shipment_not_found", [AdminController::class, "shipmentNotFound"]);
+Route::get("/track_parcel", [AdminController::class, "trackParcel"]);
 
 Route::middleware([
     'auth:sanctum',
